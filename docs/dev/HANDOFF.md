@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: DOCS-001 initialization; first brief proposal is next. Recover later work from [DOCS_PREPARATION](DOCS_PREPARATION.md), [DOCS_TASKS](DOCS_TASKS.md) and Git; this snapshot does not necessarily identify the current tip.
+Checkpoint: Pass 1 DOCS-008 completion; publish/close effects require readback.
 
 ## Workflow and sources
 
@@ -8,7 +8,7 @@ Main development, greenfield documentation preparation; sdd-manage coordinates a
 
 ## Scope and human decisions
 
-User requested six predefined cumulative scopes, autodoc/autoloop, strict delivery by default. First PROJECT approval remains active; later approvals/preapprovals and decision delegation are retained in DOCS_PREPARATION. Stop after final Pass 6 DOCS-008 before package QC/integration. Implementation requires subsequent authorization. Publish a versioned release after each later verified, integrated implementation phase once authorized. Standard reporting. GitHub tracking is project-policy enabled; native milestone 1 and issues 1–9 were individually verified before writes.
+User requested six predefined cumulative scopes, autodoc/autoloop, strict delivery by default. First PROJECT and companion decisions accepted on 2026-10-24; later approvals/preapprovals and decision delegation are retained in DOCS_PREPARATION. Stop after final Pass 6 DOCS-008 before package QC/integration. Implementation requires subsequent authorization. Publish a versioned release after each later verified, integrated implementation phase once authorized. Standard reporting. GitHub tracking is project-policy enabled; native milestone 1 and issues 1–9 were individually verified before writes.
 
 ## Branches and return
 
@@ -20,4 +20,6 @@ User requested six predefined cumulative scopes, autodoc/autoloop, strict delive
 
 ## Pending work and next action
 
-Publish/read back initialization and close/read back issue 1. Then prepare/publish Pass 1 PROJECT with exploration choices and pause for its approval. All four initialization root files were present and preserved byte for byte, so no mixed-state pause applies. No implementation task is selected. Later DOCS evidence belongs in DOCS_PREPARATION; do not infer approval from file presence. Credentials must remain ignored and excluded from all ordinary project records.
+The current scope's document tasks through DOCS-008 are complete locally under accepted autodoc/autoloop authority. Publish/read back this owning completion and close/read back issue 8 before proceeding. Then perform the authorized reset to the next predefined scope, retaining documents and prior delivery ranges; reopen/read back the same issues 2–9 before authoring.
+
+Recover exact document/QC identities and pass decisions from DOCS_PREPARATION, actual checklist and subsequent Git/hosted evidence. No product implementation, browser provisioning or release has occurred during document preparation.

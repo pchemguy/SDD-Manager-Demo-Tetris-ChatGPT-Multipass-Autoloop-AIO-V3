@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 1; DOCS-007 completed locally, publication and issue closure require readback.
+- Current scope: Pass 1; DOCS-008 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back DOCS-007, close/read back issue 7, then continue with DOCS-008. Final loop stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-008, close/read back issue 8, then reset to next predefined scope. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -41,6 +41,8 @@ The human accepted the first published PROJECT and these companion exploration p
 | Pass 6 / invalid inputs | Validate every source independently against exact allowed values. Invalid/empty/duplicate URL values fall back to a valid cookie, then default, without overwriting a valid cookie. Unknown parameters are retained; never copy raw invalid data into the DOM. | Agent proposal; user precedence applies to valid supplied values. | Pass 6; accepted. |
 | Pass 6 / persistence failures | Use versioned setting names, path-scoped cookies and finite lifetime; precise schema belongs in SPEC. Explicit valid URL values persist even at defaults. Omitted parameters are not added during hydration; each user edit changes only its own parameter/cookie via history replacement. Preserve other query parameters and fragment. Cookie/history failures retain in-memory play and expose a non-blocking save-status message. | User persistence requirements; agent encoding/failure proposal. | Pass 6; accepted. |
 
+Pass 1 delivery range: Phase 1, tasks T-001..T-013; earlier delivery ranges preserved. Current per-document QC is retained in the adjacent review reports; package QC is not selected.
+
 ## Cross-scope decisions
 
 | Concern | Applicable decisions | Reconsideration condition |
@@ -70,6 +72,7 @@ The human accepted the first published PROJECT and these companion exploration p
 | Pass 1 / DOCS-005 | [SPEC.md](SPEC.md), SHA-256 `701dbffba552b87c47f3b178dc105d87bd876f3c977289476d27cb6f5ced5b0e`; [SPEC-REVIEW-REPORT.md](SPEC-REVIEW-REPORT.md), SHA-256 `53b516dc64e007e3412d988bc8f72fcbbb5b7a78a70e4f7d0f75fbf8fe8a6f7d`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. SPEC/design conformance reviewed; exact source hashes, grouped contract/acceptance coverage and limits are in SPEC-REVIEW-REPORT.md. No unresolved confirmed finding. |
 | Pass 1 / DOCS-006 | [PLAN.md](PLAN.md), SHA-256 `bf06822e21e9db23b63616ae9d44e29a75005045d8da31db5d064fdf474cb2c5`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `cd80eee11fc9540ff44c837adf1c4363818c1849f1c9c329a3efc082f3c3deaa`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. PLAN/SPEC strategy conformance and delivery counts reviewed; PLAN-REVIEW-REPORT.md records coverage and retained small-group rationale. TASKS waits for combined layout review. |
 | Pass 1 / DOCS-007 | [layout.md](layout.md), SHA-256 `9e19ae95687f3992a477bcac7a61330ad020b10ad6b7179b38f9c46f371481ed`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `adcd54dd0f7f118697f60a178091849b6b7294fb995e24f62867b45ddc57c7ae`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Combined PLAN/layout conformance reviewed; current hashes, coverage/count rationale and placement assessment in PLAN-REVIEW-REPORT.md. No unresolved confirmed finding. |
+| Pass 1 / DOCS-008 | [TASKS.md](TASKS.md), SHA-256 `e19fc2fb4918d0c1ef26afd9f318653fd770e52d48ce5978d2fbfb9ae9ad81c6`; [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md), SHA-256 `fe0a6340d8937a8a4982876648e318e5cb8a8fed0ed15afa8187e7774e1e4096`; [HANDOFF.md](HANDOFF.md), SHA-256 `180375dd6c8c4da6caccb43367d87d2584e1fe41e4b4f430e2284233e0c656d8`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. TASKS/PLAN conformance and task counts reviewed; current source hashes, scoped coverage, dependency/review hierarchy and strict-range preservation are in TASKS-REVIEW-REPORT.md. No unresolved confirmed finding; package QC not selected. |
 
 ## Initialization and current reset
 
@@ -83,4 +86,4 @@ The human accepted the first published PROJECT and these companion exploration p
 
 ## Pending transitions
 
-DOCS-007 publication and issue 7 closure require subsequent readback. Continue only after both are verified.
+DOCS-008 publication and issue 8 closure require subsequent readback. After closure, reset for the next predefined pass.
