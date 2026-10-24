@@ -37,3 +37,7 @@ Use src/domain/landing.ts for shared projection, src/domain/rotation.ts for orde
 ## Ghost visibility allocation
 
 Use src/ui/ghost-visibility.ts for the pure footprint selector and tests/unit/ui/ghost-visibility.test.ts for boundary fixtures. Canvas consumes it through the view snapshot route; tests/browser/visual.spec.ts checks hide/restore behavior. Landing geometry remains in its domain owner.
+
+## Penetrator allocation
+
+Extend geometry.ts/landing.ts with strict-versus-transit queries; session.ts owns mode/counter/hold gating, clock.ts consumes valid grounding, and source.ts remains unaware of bonuses. Focused tests use tests/unit/domain/penetrator.test.ts plus integrated session fixtures. Canvas/view and styles own white mode feedback and bonus symbols; tests/browser/penetrator.spec.ts owns real-app controls and visible traversal checks. No second board or destructive transit layer exists.
