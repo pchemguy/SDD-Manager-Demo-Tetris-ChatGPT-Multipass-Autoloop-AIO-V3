@@ -197,3 +197,44 @@ Dependencies include the named task results and required publication/issue closu
             Depends on: Milestone 4.1, Milestone 4.2, Milestone 4.3 completion/closure.
             Scope: R-PENETRATOR, R-BONUS, R-PEN-VIEW; integrated playable outcome and prior behavior.
             Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/4/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
+
+## Phase 5 — Session game configuration
+
+- [ ] Phase 5 — Session game configuration
+    - [ ] Milestone 5.1 — Selected settings and visible controls
+        - [ ] T-044 — Implement validated session configuration
+            Scope: Typed configuration model, selectors and tests; physical owners are mapped in layout.md.
+            Depends on: T-043. Work: Six exact key/value sets/defaults; reject invalid changes; keep selected state across restart only.
+            Evidence: R-CONFIG defaults, invalid commands and all selector values remain typed and memory-only. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-045 — Build labelled keyboard-accessible controls
+            Scope: HTML configuration view and input-focus integration; physical owners are mapped in layout.md.
+            Depends on: T-044. Work: Expose all six controls and current selected values; native editing must not invoke gameplay shortcuts.
+            Evidence: Control labels, focus, immediate display/input effects and disabled hold/drop retention pass actual browser checks. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-046 — Implement next preview and live display selectors
+            Scope: Queued-kind presentation and ghost/hold/drop selector wiring; physical owners are mapped in layout.md.
+            Depends on: T-045. Work: Show next without consumption; support hidden/dynamic/shown ghost and immediate input toggles independent of lock choices.
+            Evidence: Preview matches next spawn/empty hold; toggles preserve source, stored kind and legal landing. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-047 — Review, test and report milestone 5.1
+            Depends on: T-044, T-045, T-046 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/5/5.1.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 5.2 — Locking policies and session delivery
+        - [ ] T-048 — Latch locking selections per piece
+            Scope: Session spawn/hold policy snapshot and clock tests; physical owners are mapped in layout.md.
+            Depends on: T-047. Work: Latch both general and hard-drop rules on spawn; implement failed-down/interval and follow/immediate combinations.
+            Evidence: All four combinations satisfy R-CONFIG; current timer is unaffected by selected changes and hold replacement adopts settings. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-049 — Integrate pending status and restart semantics
+            Scope: HTML pending view, composition and interaction tests; physical owners are mapped in layout.md.
+            Depends on: T-048. Work: Distinguish selected/effective policies; apply pending values on spawn/restart, retain settings on restart and reset on reload.
+            Evidence: Airborne/grounded/penetrator changes are predictable; no cookie/storage/URL writes occur. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-050 — Verify and package session configuration
+            Scope: Dual-browser tests, README, version metadata and release notes; physical owners are mapped in layout.md.
+            Depends on: T-049. Work: Exercise all controls and combinations during live play, reload and focus; produce 0.5.0 artifact/notes.
+            Evidence: AC-CONFIG and prior gameplay pass in both targets, including no persistence and next-preview invariants. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-051 — Review, test and report milestone 5.2
+            Depends on: T-048, T-049, T-050 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/5/5.2.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 5.3 — Phase review
+        - [ ] T-052 — Review, test and report phase 5
+            Depends on: Milestone 5.1, Milestone 5.2 completion/closure.
+            Scope: R-CONFIG; integrated playable outcome and prior behavior.
+            Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/5/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
