@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 3; reset to DOCS-002 using retained documents as inputs.
+- Current scope: Pass 3; DOCS-002 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back this reset, reopen/read back issues 2–9, then revise PROJECT through TASKS for the next predefined scope. Final stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-002, close/read back issue 2, then continue with DOCS-003. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -89,6 +89,8 @@ Pass 2 completed/published at `53a28382143215597b5332da1fd104c9fb914e33`; earlie
 
 Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration reference and future preview condition from the current SPEC. SPEC, combined PLAN/layout and TASKS reviews were rechecked; source identities and resolved finding are retained in their review revisions. Earlier PLAN/TASKS bytes remain unchanged. Publish/read back this scoped correction before Pass 3 reset.
 
+| Pass 3 / DOCS-002 | [PROJECT.md](PROJECT.md), SHA-256 `d922aa186f33b2b9beb2ed940983f13c05efcf2590f13508987843e99ec62432`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Brief checked against current cumulative scope and inherited accepted cross-scope decisions; later PROJECT approval is waived by the approved autoloop mode. Future scopes remain outside current product documents. |
+
 ## Initialization and current reset
 
 - Original root-file presence: all four present. Retained AGENTS.md, AI_DISCLOSURE.md, SDD-MANAGER.md and SKILL_DISCOVERY_PROTOCOL.md. No root guidance files copied or reconciled.
@@ -101,4 +103,4 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 
 ## Pending transitions
 
-Publish/read back reset, then reopen/read back the same eight issues 2–9 with reset evidence. Milestone 1 remains open. Only after verified reopening may Pass 3 PROJECT revision begin. No documents or prior decision summaries are deleted.
+DOCS-002 publication and issue 2 closure require subsequent readback. Continue only after both are verified.

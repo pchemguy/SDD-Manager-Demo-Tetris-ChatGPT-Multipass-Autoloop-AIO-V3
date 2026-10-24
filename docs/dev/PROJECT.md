@@ -10,6 +10,8 @@ Use a 10-column by 20-row visible board and the seven standard tetrominoes. Prov
 
 Provide hold, a projected ghost, independently shuffled seven-piece bags, clockwise SRS wall kicks and hard drop. Default locking waits one full gravity interval after valid grounding, including hard drop. Grounded manipulation does not extend the deadline; losing support clears it and regrounding starts a fresh interval. Hold is limited to one exchange per piece cycle. Source, timing and game transitions must be deterministic under injected test inputs.
 
+The dynamic ghost is hidden whenever any projected cell lies above the board's midline, including a straddling footprint, and returns when the whole projected footprint is in the lower half. Landing geometry is independent of visibility.
+
 ## Quality and constraints
 
 Run entirely as static browser assets, without a game server. Use TypeScript for the domain, Canvas for the board and ordinary labelled HTML controls/status. Keep rules testable without browser globals, and verify the integrated game with real browser input and visible evidence. Chromium is primary and Playwright-managed Firefox secondary under the central [browser development policy](../../BROWSER_DEV_POLICY.md); headless operation is sufficient. Focus loss suspends active simulation time without a catch-up burst.
