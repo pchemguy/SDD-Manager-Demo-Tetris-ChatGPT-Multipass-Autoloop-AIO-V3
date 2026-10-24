@@ -32,3 +32,7 @@ Restart replaces session-owned state and resets the piece source while preservin
 | Hold state | Stored kind plus per-piece exchange eligibility | Session performs atomic exchange and blocked-spawn handling; renderer reads state |
 
 Geometry owns clockwise SRS transforms and ordered kick tests; O remains unchanged. Session invokes landing before hard drop, applies the same grounding transition as any move, and does not let repeated drops refresh time. The renderer never creates a second queue or recomputes the held piece's spawn.
+
+## Ghost visibility
+
+A pure visibility selector accepts projected cells and board midline. Its only output is visible/hidden; geometry and clock state are unchanged. Canvas receives the approved footprint or no ghost. Unit fixtures cover upper/lower/straddling shapes and browser checks verify visibility follows projected position after play commands.
