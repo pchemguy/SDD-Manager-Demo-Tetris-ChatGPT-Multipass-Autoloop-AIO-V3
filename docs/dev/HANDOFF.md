@@ -1,10 +1,10 @@
 # Project handoff
 
-Checkpoint: reset from Pass 5 to Pass 6; DOCS-002 cursor.
+Checkpoint: Pass 6 DOCS-008 completion; publish/close effects require readback.
 
 ## Workflow and sources
 
-Main development, greenfield documentation preparation; sdd-manage coordinates and sdd-design owns the next PROJECT proposal. Bundled SDD Manager 0.15.2 at `.agents/plugins/sdd-manager` supplies procedures/assets. Root AGENTS.md and browser policy govern project work. No product code or build/test commands exist.
+Main development documentation preparation, final predefined scope completed through DOCS-008. sdd-manage owns this stop; sdd-verify owns DOCS-009 only after a subsequent advance instruction. Bundled SDD Manager 0.15.2 at `.agents/plugins/sdd-manager` supplies procedures/assets. Root AGENTS.md and browser policy govern project work. No product code or build/test commands exist.
 
 ## Scope and human decisions
 
@@ -20,4 +20,6 @@ User requested six predefined cumulative scopes, autodoc/autoloop, strict delive
 
 ## Pending work and next action
 
-Reset authority: accepted six-scope strict autodoc/autoloop sequence. Prior pass checkpoint: 42c1a674ea235ff0a380e2022e0b9b0d2ecc4833. Retain documents, prior delivery ranges and decision summaries. Publish/read back this reset; reopen/read back issues 2–9 (including already-open issue 9) with the reset commit evidence and verify milestone 1 remains open. Only then revise PROJECT through TASKS for Pass 6. DOCS-001 stays complete. Final stop remains Pass 6 DOCS-008 before package QC/integration/implementation.
+The current scope's document tasks through DOCS-008 are complete locally under accepted autodoc/autoloop authority. Publish/read back this owning completion and close/read back issue 8 before proceeding. This is the final predefined scope. Stop before DOCS-009/package QC, project-document integration and implementation; issue 9 and milestone 1 remain open.
+
+Recover exact document/QC identities and pass decisions from DOCS_PREPARATION, actual checklist and subsequent Git/hosted evidence. No product implementation, browser provisioning or release has occurred during document preparation.

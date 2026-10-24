@@ -238,3 +238,44 @@ Dependencies include the named task results and required publication/issue closu
             Depends on: Milestone 5.1, Milestone 5.2 completion/closure.
             Scope: R-CONFIG; integrated playable outcome and prior behavior.
             Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/5/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
+
+## Phase 6 — Persistent configuration
+
+- [ ] Phase 6 — Persistent configuration
+    - [ ] Milestone 6.1 — Validated hydration sources
+        - [ ] T-053 — Implement per-setting codec and precedence
+            Scope: Pure configuration codec and source-matrix tests; physical owners are mapped in layout.md.
+            Depends on: T-052. Work: Validate exact key/value strings, duplicate/invalid/empty inputs and independent URL→cookie→default resolution.
+            Evidence: AC-PERSISTENCE mixed-source and invalid-one/valid-five fixtures produce exact settings and explicit-valid provenance. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-054 — Implement scoped cookie adapter
+            Scope: Cookie browser adapter and isolated-context tests; physical owners are mapped in layout.md.
+            Depends on: T-053. Work: Read/write managed encoded cookies with app-directory path, max age and HTTPS attributes; detect failed readback.
+            Evidence: Malformed/duplicate/blocked cookie cases are isolated per key; default-equal values save and reload correctly. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-055 — Implement URL hydration and startup coordination
+            Scope: URL adapter, coordinator and bootstrap; physical owners are mapped in layout.md.
+            Depends on: T-054. Work: Read without rewriting URL; hydrate before spawn; seed only valid explicit URL values into corresponding cookies.
+            Evidence: Omitted/invalid URL settings retain saved cookies; explicit defaults seed cookies; unknown query/fragment remain intact. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-056 — Review, test and report milestone 6.1
+            Depends on: T-053, T-054, T-055 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/6/6.1.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 6.2 — Resilient edits and persistent delivery
+        - [ ] T-057 — Persist individual user edits
+            Scope: Configuration coordinator and URL replacement path; physical owners are mapped in layout.md.
+            Depends on: T-056. Work: Update in-memory selection then independently attempt one cookie and one history replacement; canonicalize only the edited key.
+            Evidence: No reload/history growth, unrelated parameters and fragment survive, and same-value edits can retry idempotently. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-058 — Handle persistence failures truthfully
+            Scope: Save-status view and browser adapter failure tests; physical owners are mapped in layout.md.
+            Depends on: T-057. Work: Catch read/write/history errors, keep play active, expose per-source unsaved state and clear it after successful retry.
+            Evidence: Failed URL save does not suppress cookie save and vice versa; blocked cookies do not defeat a valid URL. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-059 — Verify reload behavior and prepare persistent release
+            Scope: Dual-browser acceptance, README, static version metadata and release notes; physical owners are mapped in layout.md.
+            Depends on: T-058. Work: Exercise clean/saved/mixed contexts, exact defaults, invalid values, path scope, failure/retry and live policy latching. Produce 0.6.0 artifact/notes.
+            Evidence: AC-PERSISTENCE, AC-CONFIG and all prior game flows pass in both targets with current screenshots and documented limits. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-060 — Review, test and report milestone 6.2
+            Depends on: T-057, T-058, T-059 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/6/6.2.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 6.3 — Phase review
+        - [ ] T-061 — Review, test and report phase 6
+            Depends on: Milestone 6.1, Milestone 6.2 completion/closure.
+            Scope: R-PERSISTENCE; integrated playable outcome and prior behavior.
+            Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/6/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.

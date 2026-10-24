@@ -45,3 +45,5 @@ Follow `sdd-manage`'s preparation and phase-activation workflows for required tr
 Maintain project-specific navigation and validated setup/check commands here as they become established. Do not invent commands, paths, requirements or completion claims.
 
 Project documentation: [PROJECT](docs/dev/PROJECT.md), [ARCHITECTURE](docs/dev/ARCHITECTURE.md), [DECOMPOSITION](docs/dev/DECOMPOSITION.md), [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md) and [layout](docs/dev/layout.md). These define intended behavior and placement; setup/test commands are not implemented yet. Use [DOCS_PREPARATION](docs/dev/DOCS_PREPARATION.md) and [DOCS_TASKS](docs/dev/DOCS_TASKS.md) for the active preparation boundary.
+
+Planned implementation work is owned by [TASKS](docs/dev/TASKS.md); review its current [conformance report](docs/dev/TASKS-REVIEW-REPORT.md) and upstream QC before execution. The predefined document loop stops at DOCS-008; consult HANDOFF for the next authorized boundary.
