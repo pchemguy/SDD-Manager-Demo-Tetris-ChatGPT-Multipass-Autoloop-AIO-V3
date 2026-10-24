@@ -30,3 +30,7 @@ Logical component interfaces and exact behavior remain the responsibilities of t
 ## Enhanced piece lifecycle
 
 The domain includes one piece-source queue, hold state and a grounding clock. A single landing query supplies hard drop and ghost rendering; presentation receives only its result. Rotation tests ordered kick candidates in the geometry boundary. Hold exchanges piece kinds through session lifecycle ownership rather than moving objects between independent mutable stores. Grounding time belongs to the session transition, never the render loop. A 7-bag source owns bag order and draws through injected randomness; restart clears its queue.
+
+## Visibility policy
+
+Presentation selects whether the domain-provided landing footprint is visible using one pure visibility policy. It does not recompute landing or use the active piece's height as a substitute. The policy takes the complete projected cell set, so a shape crossing the midline has an unambiguous result.
