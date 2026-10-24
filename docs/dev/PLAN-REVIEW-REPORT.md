@@ -2,11 +2,11 @@
 
 ## Current gate
 
-State: Ready — strategy only; TASKS held for layout. Review owner: sdd-plan. Scope: current root and listed inputs; no product implementation or runtime acceptance asserted. Confirmed unresolved findings: none.
+State: Ready — combined strategy/layout. Review owner: sdd-plan. Scope: current root and listed inputs; no product implementation or runtime acceptance asserted. Confirmed unresolved findings: none.
 
 - PLAN.md: SHA-256 `bf06822e21e9db23b63616ae9d44e29a75005045d8da31db5d064fdf474cb2c5`.
+- layout.md: SHA-256 `9e19ae95687f3992a477bcac7a61330ad020b10ad6b7179b38f9c46f371481ed`.
 - SPEC.md: SHA-256 `701dbffba552b87c47f3b178dc105d87bd876f3c977289476d27cb6f5ced5b0e`.
-- PROJECT.md: SHA-256 `8f0ece083410380278b00967370192bf99c99e4fb10ee5ab389fe29f2a563103`.
 - ARCHITECTURE.md: SHA-256 `dcde69f17cb26955367e34c7f238efeaeba7e99a757a67cb7502e727c9c83c76`.
 - DECOMPOSITION.md: SHA-256 `0daec6c91ece55ac3fd8728568fad1b1b7c26b1c49a0d6ed481828569c60f80e`.
 
@@ -21,3 +21,13 @@ State: Ready — strategy only; TASKS held for layout. Review owner: sdd-plan. S
 Coverage: Phase 1: R-BOARD, R-PIECE, R-INPUT, R-TIME, R-LOCK (failed-down baseline), R-CLEAR, R-SCORE, R-LIFE, R-VIEW, R-QUALITY.
 
 Assessed each phase for useful integrated scope, justified dependencies, preservation of prior play and objective release/review exits. Phase 1 remains a minimal complete playable classic game. Every delivery milestone has an explicit review outcome and each phase a single final review milestone. Required browser failures cannot be silently waived. No confirmed omission or oversized task bucket was found. Placement review remains pending DOCS-007; this Ready result covers strategy only and does not clear TASKS derivation.
+
+## Revision 1
+
+2026-10-24: Rechecked against current scope and identities above.
+
+| Group | Delivery count | Excluded reviews | Assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 3 milestones | 1 phase review | Three cohesive capability boundaries with timely integration; no whole-version first phase or final backlog bucket. |
+
+Combined assessment: mapped every component to its intended source owner and unit/integration/browser checks. Domain paths cannot import browser/UI; source/queue/clock state remain singular. Static output and generated browser state are ignored/excluded; root instructions link established document owners without inventing executable commands. Source paths are proposed, not claims of existing code. Relevant PLAN/SPEC scope, delivery/review dependencies and static release placement remain consistent. No ambiguous ownership or blocked task-sized edit scope remains. No confirmed findings remain; TASKS can be derived. No runtime/browser checks were executed.
