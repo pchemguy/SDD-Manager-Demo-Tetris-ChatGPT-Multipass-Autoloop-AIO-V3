@@ -85,3 +85,23 @@ Dependency: Milestone 2.2 completion/closure. Exit: integrated milestone capabil
 Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
 
 Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.2.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
+
+## Phase 3 — Dynamic ghost visibility
+
+Outcome: A ghost that hides above the midline and restores only for a fully lower-half landing.
+
+Scope: R-VISIBILITY. Version target: 0.3.0. Depends on verified, published integration of Phase 2; preserve its working behavior except the explicitly scheduled rule changes in this phase.
+
+### Milestone 3.1 — Projected-footprint visibility
+
+One small integrated visibility capability; no unrelated gameplay expansion.
+
+Includes: implement all-cells midline visibility; verify visibility transitions and static delivery.
+
+Dependency: phase entry. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 3.2 — Phase review
+
+Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
+
+Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.3.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
