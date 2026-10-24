@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 1; DOCS-002 completed locally, publication and issue closure require readback.
+- Current scope: Pass 1; DOCS-003 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back DOCS-002, close/read back issue 2, then continue with DOCS-003. Final loop stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-003, close/read back issue 3, then continue with DOCS-004. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -60,7 +60,12 @@ The human accepted the first published PROJECT and these companion exploration p
 | DOCS-003–008 | Not started; later checkpoints preapproved by mode after the first PROJECT approval. |
 | DOCS-009 | Not selected; keep task, issue 9 and milestone 1 open at the final autoloop stop. |
 
+## Pass completion evidence
+
+| Task | State, basis and checks |
+| --- | --- |
 | Pass 1 / DOCS-002 | [PROJECT.md](PROJECT.md), SHA-256 `8f0ece083410380278b00967370192bf99c99e4fb10ee5ab389fe29f2a563103`. Basis: Human “Approve” accepted the published first brief and companion proposals on 2026-10-24. Owner review passed: scope, input conformance, responsibility boundaries and links. |
+| Pass 1 / DOCS-003 | [ARCHITECTURE.md](ARCHITECTURE.md), SHA-256 `dcde69f17cb26955367e34c7f238efeaeba7e99a757a67cb7502e727c9c83c76`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Owner review passed: scope, input conformance, responsibility boundaries and links. |
 
 ## Initialization and current reset
 
@@ -74,4 +79,4 @@ The human accepted the first published PROJECT and these companion exploration p
 
 ## Pending transitions
 
-DOCS-002 publication and issue 2 closure require subsequent readback. Continue only after both are verified.
+DOCS-003 publication and issue 3 closure require subsequent readback. Continue only after both are verified.
