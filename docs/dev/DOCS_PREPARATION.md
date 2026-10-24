@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 5; DOCS-008 completed locally, publication and issue closure require readback.
+- Current scope: Pass 6; reset to DOCS-002 using retained documents as inputs.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back DOCS-008, close/read back issue 8, then reset to next predefined scope. Final loop stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back this reset, reopen/read back issues 2–9, then revise PROJECT through TASKS for the next predefined scope. Final stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -60,6 +60,8 @@ Pass 4 delivery range: Phase 4, tasks T-031..T-043; earlier delivery ranges pres
 Pass 4 completed/published at `adacdc0a662d9b1b3b7b5b8b13dc4e7242f73dc0`; earlier PLAN SHA-256 `3b54055c3d79216d114288ba35813af38fec06b091d35d211ec425a2c8e6734e` and TASKS SHA-256 `cb9d51e7e0595f47c3419038a141cd65a32fdaeea400a10ccd466313fa5c7018` are protected inputs. Pass 5 carries forward applicable accepted exploration choices for its scope; no prior delivery-range amendment is authorized.
 
 Pass 5 delivery range: Phase 5, tasks T-044..T-052; earlier delivery ranges preserved. Current per-document QC is retained in the adjacent review reports; package QC is not selected.
+
+Pass 5 completed/published at `42c1a674ea235ff0a380e2022e0b9b0d2ecc4833`; earlier PLAN SHA-256 `568720925249f977c49a6e0b0cb59547dda9cf603c7eec249f04611c7a935c24` and TASKS SHA-256 `4659f3e5037f66cf3f97d75ef2eabb097c254f9b62f91c420f44651591b15d5e` are protected inputs. Pass 6 carries forward applicable accepted exploration choices for its scope; no prior delivery-range amendment is authorized.
 
 ## Cross-scope decisions
 
@@ -129,10 +131,10 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 - Verification: each retained file compared byte for byte with the initial Git object. Bundled task definitions preserved; token excluded by appended `*.tkn` rule and verified untracked before storage.
 - Continuation: all four present, so no mixed-state pause applies.
 - Manual provenance: default enabled; only the two package scaffold files copied unchanged. Published seed a33e466ebd28a47a20e666aabf1159d80156616f from initial main 35c594d49dbe3e0483f79585c2553e7323bfb52c; explicit two-parent merge 1082c5229eb7fb58129b28543e1f3b0c0fdf6e4f on main verified and published before this branch. No conversations recorded.
-- Current reset: from completed Pass 4 at adacdc0a662d9b1b3b7b5b8b13dc4e7242f73dc0 to Pass 5; scope delta follows the predefined sequence. First PROJECT approval authorized these resets and waived later PROJECT approvals. DOCS-001 remains complete.
+- Current reset: from completed Pass 5 at 42c1a674ea235ff0a380e2022e0b9b0d2ecc4833 to Pass 6; scope delta follows the predefined sequence. First PROJECT approval authorized these resets and waived later PROJECT approvals. DOCS-001 remains complete.
 - Preparation branch creation parent: main; full branch-off 1082c5229eb7fb58129b28543e1f3b0c0fdf6e4f.
 - Execution host: Linux; Git 2.51.1, Node 24.19.0, Python 3.12.14. Windows-specific shell policy does not apply to this host. No dependencies installed and no browser provisioned.
 
 ## Pending transitions
 
-DOCS-008 publication and issue 8 closure require subsequent readback. After closure, reset for the next predefined pass.
+Publish/read back reset, then reopen/read back the same eight issues 2–9 with reset evidence. Milestone 1 remains open. Only after verified reopening may Pass 6 PROJECT revision begin. No documents or prior decision summaries are deleted.
