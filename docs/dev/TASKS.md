@@ -140,3 +140,60 @@ Dependencies include the named task results and required publication/issue closu
             Depends on: Milestone 3.1 completion/closure.
             Scope: R-VISIBILITY; integrated playable outcome and prior behavior.
             Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/3/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
+
+## Phase 4 — Penetrator gameplay
+
+- [ ] Phase 4 — Penetrator gameplay
+    - [ ] Milestone 4.1 — Legal penetration and projection
+        - [ ] T-031 — Implement penetrator landing scans
+            Scope: Geometry landing query and obstruction fixtures; physical owners are mapped in layout.md.
+            Depends on: T-030. Work: Distinguish strict final placement from transit; scan all downward rows for greatest valid landing and reject no-destination candidates.
+            Evidence: Upper obstruction/lower pocket and floor/ceiling/wall fixtures establish strict versus transit behavior. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-032 — Integrate penetrating movement and rotations
+            Scope: Session move/rotate/drop commands and geometry tests; physical owners are mapped in layout.md.
+            Depends on: T-031. Work: Use transit feasibility with a remaining legal destination; use ordered kick offsets; hard drop and ghost share the same full scan.
+            Evidence: R-PENETRATOR candidate rejection has no side effects and ghost/drop destinations agree below obstructions. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-033 — Integrate valid grounding and locking
+            Scope: Grounding clock, board write and integration fixtures; physical owners are mapped in layout.md.
+            Depends on: T-032. Work: Never ground/lock an overlapping transit position; preserve effective delay and revalidate strict placement before atomic lock.
+            Evidence: No occupied cell is destroyed; all accepted locks are fully visible/non-overlapping under timed and drop transitions. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-034 — Review, test and report milestone 4.1
+            Depends on: T-031, T-032, T-033 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/4/4.1.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 4.2 — Activation and bonus economy
+        - [ ] T-035 — Implement activation and hold exclusion
+            Scope: Session mode/hold state, input P and focused tests; physical owners are mapped in layout.md.
+            Depends on: T-034. Work: Validate available bonus and landing before spending; reject repeat/off toggles; keep hold disabled until lock.
+            Evidence: Zero-bonus/invalid/repeated activation changes no count or queue; active hold is a side-effect-free rejection. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-036 — Award and cap four-line bonuses
+            Scope: Line-clear/score transaction and bonus tests; physical owners are mapped in layout.md.
+            Depends on: T-035. Work: Award one after each simultaneous four-line clear including penetrator clears, cap at three, reset on restart.
+            Evidence: Cap, spend-before-award, three-line non-award and earned/spent sequences match R-BONUS. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-037 — Verify complete bonus and piece lifecycle
+            Scope: Session integration fixtures; physical owners are mapped in layout.md.
+            Depends on: T-036. Work: Run activation→transit→lock→clear→award→spawn and failure sequences, preserving next/hold/timer state.
+            Evidence: Mode ends before spawn, counters stay 0..3 and existing scoring/source rules remain correct. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-038 — Review, test and report milestone 4.2
+            Depends on: T-035, T-036, T-037 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/4/4.2.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 4.3 — Penetrator feedback and delivery
+        - [ ] T-039 — Render penetrator and bonus status
+            Scope: Canvas mode color and HTML bonus/hold status; physical owners are mapped in layout.md.
+            Depends on: T-038. Work: White active/ghost geometry, non-white regular/settled kind colors and exactly one accessible symbol per bonus.
+            Evidence: Spend/earn snapshots immediately update count/symbols; white ghost remains visually distinguishable. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-040 — Verify penetrator play in both targets
+            Scope: Browser acceptance and screenshot fixtures; physical owners are mapped in layout.md.
+            Depends on: T-039. Work: Exercise native activation, pass-through, deepest drop/ghost, hold rejection, awards and restart with real app wiring.
+            Evidence: AC-PENETRATOR and prior modern/visibility regressions pass, with occupied-cell preservation visible. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-041 — Prepare penetrator static release
+            Scope: README, build/version metadata and release notes; physical owners are mapped in layout.md.
+            Depends on: T-040. Work: Document controls, legal transit and bonus rules; produce 0.4.0 static artifact and matching notes.
+            Evidence: Built artifact reproduces the verified behavior; no debug fixture/data or local browser state is shipped. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-042 — Review, test and report milestone 4.3
+            Depends on: T-039, T-040, T-041 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/4/4.3.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 4.4 — Phase review
+        - [ ] T-043 — Review, test and report phase 4
+            Depends on: Milestone 4.1, Milestone 4.2, Milestone 4.3 completion/closure.
+            Scope: R-PENETRATOR, R-BONUS, R-PEN-VIEW; integrated playable outcome and prior behavior.
+            Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/4/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
