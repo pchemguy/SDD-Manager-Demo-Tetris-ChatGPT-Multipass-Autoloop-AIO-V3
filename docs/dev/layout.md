@@ -41,3 +41,7 @@ Use src/ui/ghost-visibility.ts for the pure footprint selector and tests/unit/ui
 ## Penetrator allocation
 
 Extend geometry.ts/landing.ts with strict-versus-transit queries; session.ts owns mode/counter/hold gating, clock.ts consumes valid grounding, and source.ts remains unaware of bonuses. Focused tests use tests/unit/domain/penetrator.test.ts plus integrated session fixtures. Canvas/view and styles own white mode feedback and bonus symbols; tests/browser/penetrator.spec.ts owns real-app controls and visible traversal checks. No second board or destructive transit layer exists.
+
+## Configuration allocation
+
+Use src/config/model.ts for typed selected settings/defaults/validation and src/ui/configuration.ts for labelled controls/pending status. src/ui/preview.ts reads the existing next queue. Composition shares one configuration owner across restarts; session.ts latches locking policy. Tests live in tests/unit/config/, tests/integration/configuration.test.ts and tests/browser/configuration.spec.ts. Keep browser persistence out of this memory model.
