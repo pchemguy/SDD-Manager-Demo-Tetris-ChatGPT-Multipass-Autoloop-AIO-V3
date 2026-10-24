@@ -40,3 +40,7 @@ A pure visibility selector accepts projected cells and board midline. Its only o
 ## Penetrator responsibilities
 
 Geometry exposes separate strict placement and transit/landing queries. Session owns the active-mode flag and bonus counter, validates activation before spending, disallows hold in this mode and clears activation after a successful lock. Penetrator landing scans below occupied obstructions; rejected movement cannot strand an invalid piece with no lower legal placement. Grounding clock receives only valid grounding outcomes. Board never deletes cells during transit. Snapshot adds mode and bonus count; Canvas/HTML render white active geometry and one bonus symbol per count. Test seams compare ordinary and penetrating destinations on the same fixture and assert unchanged occupied cells.
+
+## Selected and effective configuration
+
+Configuration model validates six selected settings and exposes a typed change operation. Session latches the two locking settings together on every spawn, including hold exchange; input/display selectors use selected values immediately. The HTML configuration view shows selected controls and any pending locking-policy state without taking game keyboard shortcuts while editing. Restart obtains selected settings from the existing configuration owner. The memory-only model has no cookie, storage or URL dependency. Next-preview rendering reads the already queued kind without consuming it.
