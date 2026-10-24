@@ -41,4 +41,8 @@ Movement rules distinguish transit feasibility from legal settled placement. The
 
 ## Configuration boundary
 
-A typed configuration model owns six validated selected settings. Controller commands change settings, presentation exposes HTML controls, and domain snapshots distinguish selected locking policy from the current piece's latched policy. Input/display settings are read live; locking policy is latched at spawn. This prevents a control change from resetting or immediately expiring an existing timer. The configuration owner outlives a restarted game and remains memory-only for the page lifetime.
+A typed configuration model owns six validated selected settings. Controller commands change settings, presentation exposes HTML controls, and domain snapshots distinguish selected locking policy from the current piece's latched policy. Input/display settings are read live; locking policy is latched at spawn. This prevents a control change from resetting or immediately expiring an existing timer. The configuration owner outlives a restarted game and is hydrated from validated browser sources before the first spawn.
+
+## Persistence adapters
+
+URL and cookie adapters implement browser I/O around the same typed configuration owner. A pure codec validates each source independently and resolves one setting at a time. Hydration applies valid explicit URL values to cookies but never fills omitted URL parameters with defaults. User edits update the in-memory setting first, then attempt that setting's cookie and history writes independently. Storage errors cannot corrupt the domain or prevent play. Browser adapters preserve unrelated URL data and expose save status; no server or third-party persistence service exists.
