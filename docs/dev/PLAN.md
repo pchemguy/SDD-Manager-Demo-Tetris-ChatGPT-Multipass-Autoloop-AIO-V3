@@ -49,3 +49,39 @@ Dependency: Milestone 1.2 completion/closure. Exit: integrated milestone capabil
 Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
 
 Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.1.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
+
+## Phase 2 — Modern gameplay
+
+Outcome: A playable modern piece lifecycle with hold, shuffled bags, kicks, shared projection and full-interval default locking.
+
+Scope: R-BAG, R-HOLD, R-ROTATE, R-LANDING, R-DROP, R-GHOST, R-DELAY. Version target: 0.2.0. Depends on verified, published integration of Phase 1; preserve its working behavior except the explicitly scheduled rule changes in this phase.
+
+### Milestone 2.1 — Bag source and hold
+
+A coherent predictable source/hold lifecycle with visible stored kind.
+
+Includes: implement the 7-bag queue; implement one-exchange hold lifecycle; expose hold input and view.
+
+Dependency: phase entry. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 2.2 — Rotation and shared landing
+
+SRS movement and a ghost that previews the exact hard-drop destination.
+
+Includes: implement ordered clockwise wall kicks; implement shared landing and delayed hard drop; render the projected ghost.
+
+Dependency: Milestone 2.1 completion/closure. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 2.3 — Grounding clock and integrated modern delivery
+
+One coherent delayed-lock lifecycle, usable in both browsers and documented for the static release.
+
+Includes: implement full-interval grounding time; integrate hold, kicks and focus with grounding; verify and package modern gameplay.
+
+Dependency: Milestone 2.2 completion/closure. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 2.4 — Phase review
+
+Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
+
+Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.2.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
