@@ -105,3 +105,39 @@ Dependency: phase entry. Exit: integrated milestone capability, its focused chec
 Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
 
 Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.3.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
+
+## Phase 4 — Penetrator gameplay
+
+Outcome: A bonus-gated white piece that traverses occupied cells and locks only at a valid destination.
+
+Scope: R-PENETRATOR, R-BONUS, R-PEN-VIEW. Version target: 0.4.0. Depends on verified, published integration of Phase 3; preserve its working behavior except the explicitly scheduled rule changes in this phase.
+
+### Milestone 4.1 — Legal penetration and projection
+
+One authoritative transit/landing model without destructive overlap or invalid locking.
+
+Includes: implement penetrator landing scans; integrate penetrating movement and rotations; integrate valid grounding and locking.
+
+Dependency: phase entry. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 4.2 — Activation and bonus economy
+
+A bounded spend/earn lifecycle that cannot bypass hold rules.
+
+Includes: implement activation and hold exclusion; award and cap four-line bonuses; verify complete bonus and piece lifecycle.
+
+Dependency: Milestone 4.1 completion/closure. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 4.3 — Penetrator feedback and delivery
+
+Clear white-piece and bonus feedback in a verified static build.
+
+Includes: render penetrator and bonus status; verify penetrator play in both targets; prepare penetrator static release.
+
+Dependency: Milestone 4.2 completion/closure. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 4.4 — Phase review
+
+Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
+
+Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.4.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
