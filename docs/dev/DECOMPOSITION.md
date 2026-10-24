@@ -36,3 +36,7 @@ Geometry owns clockwise SRS transforms and ordered kick tests; O remains unchang
 ## Ghost visibility
 
 A pure visibility selector accepts projected cells and board midline. Its only output is visible/hidden; geometry and clock state are unchanged. Canvas receives the approved footprint or no ghost. Unit fixtures cover upper/lower/straddling shapes and browser checks verify visibility follows projected position after play commands.
+
+## Penetrator responsibilities
+
+Geometry exposes separate strict placement and transit/landing queries. Session owns the active-mode flag and bonus counter, validates activation before spending, disallows hold in this mode and clears activation after a successful lock. Penetrator landing scans below occupied obstructions; rejected movement cannot strand an invalid piece with no lower legal placement. Grounding clock receives only valid grounding outcomes. Board never deletes cells during transit. Snapshot adds mode and bonus count; Canvas/HTML render white active geometry and one bonus symbol per count. Test seams compare ordinary and penetrating destinations on the same fixture and assert unchanged occupied cells.
