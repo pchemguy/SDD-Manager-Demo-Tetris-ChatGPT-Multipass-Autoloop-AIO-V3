@@ -33,3 +33,7 @@ The seven development roots and adjacent QC reports stay in docs/dev/. Preparati
 ## Enhanced gameplay allocation
 
 Use src/domain/landing.ts for shared projection, src/domain/rotation.ts for ordered kick tables/selection and src/domain/clock.ts for grounding policy. Their focused tests belong in tests/unit/domain/ with cross-feature checks in tests/integration/session.test.ts. Source.ts owns bag/queue; session.ts owns hold state; Canvas/view own ghost and held-kind presentation. Avoid a separate mutable view queue.
+
+## Ghost visibility allocation
+
+Use src/ui/ghost-visibility.ts for the pure footprint selector and tests/unit/ui/ghost-visibility.test.ts for boundary fixtures. Canvas consumes it through the view snapshot route; tests/browser/visual.spec.ts checks hide/restore behavior. Landing geometry remains in its domain owner.
