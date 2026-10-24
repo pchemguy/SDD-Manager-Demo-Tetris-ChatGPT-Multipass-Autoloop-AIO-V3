@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation ranges have yet been defined.
-- Current scope: Pass 1, playable classic baseline; DOCS-001 initialization checkpoint.
+- Current scope: Pass 1, playable classic baseline; DOCS-002 first PROJECT proposal pending approval.
 - Approval basis: first PROJECT approval remains active. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back initialization, close/read back DOCS-001, then prepare and publish the first PROJECT proposal for human approval. Final loop stop: Pass 6 DOCS-008; DOCS-009/package QC, documentation integration and implementation remain outside that stop.
+- Next boundary: publish/read back the first PROJECT proposal, then obtain human approval of the brief and companion exploration proposals before dependent architecture. Final loop stop: Pass 6 DOCS-008; DOCS-009/package QC, documentation integration and implementation remain outside that stop.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -55,8 +55,8 @@ These are initial exploration proposals by the agent, pending human acceptance w
 
 | Task | Current evidence / decision basis |
 | --- | --- |
-| DOCS-001 | All four root files retained byte for byte against initial commit 35c594d49dbe3e0483f79585c2553e7323bfb52c; task template copied from bundled 0.15.2 and only DOCS-001 checked. Provenance identities below. Initialization publication and issue 1 closure require subsequent readback. |
-| DOCS-002 | Pass 1 PROJECT proposal not yet authored at initialization; first human approval required. |
+| DOCS-001 | All four root files retained byte for byte against initial commit 35c594d49dbe3e0483f79585c2553e7323bfb52c; task template copied from bundled 0.15.2 and only DOCS-001 checked. Provenance identities below. Initialization 0742346ae0739f5080bb6597aaed9708b97a836c published with exact remote matching and confirmed process cleanup; issue 1 read back closed/completed. |
+| DOCS-002 | Pass 1 proposal: [PROJECT](PROJECT.md), SHA-256 `8f0ece083410380278b00967370192bf99c99e4fb10ee5ab389fe29f2a563103`. Human approval pending; DOCS-002 remains unchecked and issue 2 open. Review checked seed coverage, current-scope isolation, product/process boundary, link targets and concise brief depth. Root README adds disclosure/usage links. Cross-scope proposals above are explicitly submitted for acceptance with the brief, not represented as prior human decisions. |
 | DOCS-003–008 | Not started; later checkpoints preapproved by mode after the first PROJECT approval. |
 | DOCS-009 | Not selected; keep task, issue 9 and milestone 1 open at the final autoloop stop. |
 
@@ -72,4 +72,4 @@ These are initial exploration proposals by the agent, pending human acceptance w
 
 ## Pending transitions
 
-Publish/read back this initialization commit and close/read back issue 1 before PROJECT work. First PROJECT and exploration proposals remain pending human review. No implementation, release, package QC or project-document integration is authorized at this boundary.
+Publish/read back this PROJECT proposal, then pause for first PROJECT and companion exploration approval. DOCS-002 remains unchecked and issue 2 open until acceptance is persisted. The later five PROJECT checkpoints are waived under the selected autoloop mode. No implementation, release, package QC or project-document integration is authorized at this boundary.
