@@ -141,3 +141,31 @@ Dependency: Milestone 4.2 completion/closure. Exit: integrated milestone capabil
 Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
 
 Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.4.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
+
+## Phase 5 — Session game configuration
+
+Outcome: Six usable side-panel settings with explicit live/pending behavior and no reload persistence.
+
+Scope: R-CONFIG. Version target: 0.5.0. Depends on verified, published integration of Phase 4; preserve its working behavior except the explicitly scheduled rule changes in this phase.
+
+### Milestone 5.1 — Selected settings and visible controls
+
+A labelled configuration panel with ghost, drop, hold and next-preview selectors.
+
+Includes: implement validated session configuration; build labelled keyboard-accessible controls; implement next preview and live display selectors.
+
+Dependency: phase entry. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 5.2 — Locking policies and session delivery
+
+Predictable policy changes with visible pending state, verified through the game.
+
+Includes: latch locking selections per piece; integrate pending status and restart semantics; verify and package session configuration.
+
+Dependency: Milestone 5.1 completion/closure. Exit: integrated milestone capability, its focused checks and relevant regressions, code review with blockers repaired, and a committed milestone report. Demonstrate the stated outcome at this boundary; evidence supports a human continue/amend/simplify/stop decision without imposing an extra approval on an already authorized range.
+
+### Milestone 5.3 — Phase review
+
+Exactly one final code-review/testing/report outcome after all delivery milestones complete and close. Verify the phase contracts and playable integration, applicable browser/visual evidence, prior behavior, build/docs/version consistency and unresolved findings. Repair blockers before completion. Aggregate unresolved findings for the delivered scope; when this is the final defined phase, include the final implementation report/TODO aggregation.
+
+Phase exit: all delivery and review outcomes complete, reports committed/published, required issue/milestone closures verified, and a two-parent integration into main verified/published. After implementation is authorized and these exits hold, create the 0.5.0 default-branch release commit, tag that exact commit, then publish matching complete release notes and static artifact. No phase completion or release is claimed by this plan.
