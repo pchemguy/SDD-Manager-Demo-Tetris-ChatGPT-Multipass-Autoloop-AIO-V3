@@ -26,3 +26,7 @@ A blocked spawn or top-out is a domain outcome, displayed as game over. A reject
 A pure rules boundary avoids fragile browser-only testing of collision and lifecycle. Canvas keeps cell drawing compact; HTML preserves ordinary keyboard navigation for buttons and status. A UI framework and a generic plugin/event-bus system add unnecessary indirection for this product. Domain tests use injected sequences and time; browser checks exercise actual keys, focus, drawing and restart in the two declared targets under [BROWSER_DEV_POLICY](../../BROWSER_DEV_POLICY.md).
 
 Logical component interfaces and exact behavior remain the responsibilities of the decomposition and specification documents respectively.
+
+## Enhanced piece lifecycle
+
+The domain includes one piece-source queue, hold state and a grounding clock. A single landing query supplies hard drop and ghost rendering; presentation receives only its result. Rotation tests ordered kick candidates in the geometry boundary. Hold exchanges piece kinds through session lifecycle ownership rather than moving objects between independent mutable stores. Grounding time belongs to the session transition, never the render loop. A 7-bag source owns bag order and draws through injected randomness; restart clears its queue.
