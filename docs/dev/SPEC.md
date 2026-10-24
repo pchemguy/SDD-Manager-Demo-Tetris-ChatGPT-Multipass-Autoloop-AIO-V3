@@ -99,3 +99,9 @@ The failed-down rule in R-LOCK remains the alternative general policy. A hard dr
 - AC-MODERN-2: Fixtures for all four clockwise transitions of both offset families choose the first legal candidate; fully blocked rotation preserves the original piece.
 - AC-MODERN-3: Ghost cells equal hard-drop destination for the same snapshot, including walls, cavities and top-out; reading projection never mutates state.
 - AC-MODERN-4: At 999 ms of grounding no lock, at 1000 ms lock. Grounded moves/failed down/repeated drop preserve the deadline; leaving support and regrounding resets as specified. Equivalent active-time partitions and focus suspension preserve outcomes.
+
+## R-VISIBILITY — Dynamic ghost visibility
+
+The dynamic mode shows a ghost only when every projected cell has y>=10. A footprint with any cell at y<10 is hidden, including one spanning rows 9 and 10. Row 10 belongs to the lower half. Evaluate the projected landing, never the active piece's current height or footprint center, after every move/rotation/hold/lock/spawn/board change. A missing/illegal fully visible landing has no ghost. Visibility changes no gameplay geometry or timing.
+
+AC-VISIBILITY: Assert entirely upper, entirely lower, exactly row-10 boundary and straddling footprints. Gameplay that changes landing from lower to upper and back hides and restores the correct footprint in both browsers.
