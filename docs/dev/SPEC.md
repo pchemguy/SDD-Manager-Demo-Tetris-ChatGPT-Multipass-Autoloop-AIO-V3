@@ -68,7 +68,7 @@ Deliver static browser assets without a backend. No account, network leaderboard
 
 Each bag is a uniformly shuffled permutation of all seven kinds; concatenate independently shuffled bags. Maintain one queued next kind without consuming it on display. Spawn and empty hold each consume exactly one queued kind. Restart clears bag/queue and starts a fresh bag. An injected sequence replaces random draws in tests only.
 
-C holds the active kind or exchanges it with the stored kind at normal orientation/origin. At most one hold succeeds per piece cycle; holding spawns a replacement but does not itself re-enable hold. A successful lock re-enables it. An unavailable or repeated hold leaves source, board and stored kind unchanged; blocked replacement spawn ends play after the exchange is accounted for. Held/next kinds contain no previous rotation, position or clock. Show the stored kind and availability in HTML/Canvas status. The next kind may remain undisplayed until preview is enabled as a product capability.
+C holds the active kind or exchanges it with the stored kind at normal orientation/origin. At most one hold succeeds per piece cycle; holding spawns a replacement but does not itself re-enable hold. A successful lock re-enables it. An unavailable or repeated hold leaves source, board and stored kind unchanged; blocked replacement spawn ends play after the exchange is accounted for. Held/next kinds contain no previous rotation, position or clock. Show the stored kind and availability in HTML/Canvas status. The queued next kind is not displayed.
 
 ### R-ROTATE — Clockwise SRS candidates
 
@@ -91,7 +91,7 @@ For an ordinary piece, landing is the last strict valid position reached by down
 
 Default general locking is delayed: once validly grounded, accumulate G=1000 ms from that grounding event, independently of gravity cadence; lock at exactly G unless support is lost first. Movement/rotation that remains grounded preserves elapsed grounding time. Becoming airborne clears it; a later valid grounding starts a fresh interval. Rejected commands and repeated hard drop do not refresh the timer. A failed downward attempt while grounded does not lock early under this policy. Hard drop onto a new landing starts the full interval; a hard drop that leaves an already grounded position uses the remaining interval. New spawn/hold replacement resets both clocks. Time suspension freezes both clocks. If an input event has the same logical timestamp as a due timer expiry, process the due expiry before that input, so a locked piece cannot be rescued retroactively.
 
-The failed-down rule in R-LOCK remains the alternative general policy. A hard drop under that policy follows ordinary movement semantics: arriving at the landing does not lock until a subsequent failed down attempt. There is no user-selectable policy control unless required by R-CONFIG. Under the default rule, hard drop never bypasses the delay.
+The failed-down rule in R-LOCK remains the alternative general policy. A hard drop under that policy follows ordinary movement semantics: arriving at the landing does not lock until a subsequent failed down attempt. No user-selectable locking-policy control is exposed. Under the default rule, hard drop never bypasses the delay.
 
 ### Enhanced acceptance
 

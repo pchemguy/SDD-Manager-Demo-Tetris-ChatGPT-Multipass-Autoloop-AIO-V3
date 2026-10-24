@@ -6,7 +6,7 @@ State: Ready — combined strategy/layout. Review owner: sdd-plan. Scope: curren
 
 - PLAN.md: SHA-256 `f87603c13e6092039f0df3c1da1c34f50885ae3fea5acfe811392b5e07118454`.
 - layout.md: SHA-256 `707d8500ef31ef735f912c966e53c47958a7d828440e10a8932cc81cc7dbbe67`.
-- SPEC.md: SHA-256 `a3ae2b8617200f7883ea2de703794ee3038562eb44b80b1a57ccdca845e9667c`.
+- SPEC.md: SHA-256 `192ac2ce5ee421f6c72520fe9372dc59432cf0e464285f87d0c8f4da4afef394`.
 - ARCHITECTURE.md: SHA-256 `6a1602f375c6106d610605df8041dbc72a75efd2cba1b65b3b6cfa1b780ae711`.
 - DECOMPOSITION.md: SHA-256 `747a7f53f735b4d382676cb62f1e25598cc2dd2d85880ac51793957271b47bf0`.
 
@@ -55,3 +55,12 @@ Assessed each phase for useful integrated scope, justified dependencies, preserv
 | Phase 2 | 3 milestones | 1 phase review | Three cohesive capability boundaries with timely integration; no whole-version first phase or final backlog bucket. |
 
 Combined assessment: mapped every component to its intended source owner and unit/integration/browser checks. Domain paths cannot import browser/UI; source/queue/clock state remain singular. Static output and generated browser state are ignored/excluded; root instructions link established document owners without inventing executable commands. Source paths are proposed, not claims of existing code. Relevant PLAN/SPEC scope, delivery/review dependencies and static release placement remain consistent. No ambiguous ownership or blocked task-sized edit scope remains. Earlier PLAN phase blocks remain byte-identical; layout expands only for the new capability. No confirmed findings remain; TASKS can be derived. No runtime/browser checks were executed.
+
+## Revision 4
+
+2026-10-24: Rechecked against current scope and identities above.
+
+Rechecked after SPEC-F01 wording correction. Current strategy, placement, phase counts, task scope and exits are unchanged. The correction removes an undefined future reference without changing current behavior. Phases 1 and 2 and combined layout coverage remain Ready; no unresolved finding. | Group | Delivery count | Excluded reviews | Assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 3 milestones | 1 phase review | Three cohesive capability boundaries with timely integration; no whole-version first phase or final backlog bucket. |
+| Phase 2 | 3 milestones | 1 phase review | Three cohesive capability boundaries with timely integration; no whole-version first phase or final backlog bucket. |
