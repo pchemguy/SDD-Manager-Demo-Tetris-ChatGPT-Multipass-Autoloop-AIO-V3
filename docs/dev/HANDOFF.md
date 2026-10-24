@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: reset from Pass 2 to Pass 3; DOCS-002 cursor.
+Checkpoint: Pass 3 DOCS-008 completion; publish/close effects require readback.
 
 ## Workflow and sources
 
@@ -20,4 +20,6 @@ User requested six predefined cumulative scopes, autodoc/autoloop, strict delive
 
 ## Pending work and next action
 
-Reset authority: accepted six-scope strict autodoc/autoloop sequence. Prior pass checkpoint: 53a28382143215597b5332da1fd104c9fb914e33. Retain documents, prior delivery ranges and decision summaries. Publish/read back this reset; reopen/read back issues 2–9 (including already-open issue 9) with the reset commit evidence and verify milestone 1 remains open. Only then revise PROJECT through TASKS for Pass 3. DOCS-001 stays complete. Final stop remains Pass 6 DOCS-008 before package QC/integration/implementation.
+The current scope's document tasks through DOCS-008 are complete locally under accepted autodoc/autoloop authority. Publish/read back this owning completion and close/read back issue 8 before proceeding. Then perform the authorized reset to the next predefined scope, retaining documents and prior delivery ranges; reopen/read back the same issues 2–9 before authoring.
+
+Recover exact document/QC identities and pass decisions from DOCS_PREPARATION, actual checklist and subsequent Git/hosted evidence. No product implementation, browser provisioning or release has occurred during document preparation.

@@ -119,3 +119,24 @@ Dependencies include the named task results and required publication/issue closu
             Depends on: Milestone 2.1, Milestone 2.2, Milestone 2.3 completion/closure.
             Scope: R-BAG, R-HOLD, R-ROTATE, R-LANDING, R-DROP, R-GHOST, R-DELAY; integrated playable outcome and prior behavior.
             Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/2/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
+
+## Phase 3 — Dynamic ghost visibility
+
+- [ ] Phase 3 — Dynamic ghost visibility
+    - [ ] Milestone 3.1 — Projected-footprint visibility
+        - [ ] T-027 — Implement all-cells midline visibility
+            Scope: Pure visibility selector, snapshot/view wiring and focused fixtures; physical owners are mapped in layout.md.
+            Depends on: T-026. Work: Apply y>=10 to every projected cell; hidden/straddling footprints draw no ghost while preserving geometry/timing.
+            Evidence: Upper/lower/exact-boundary/straddling cases satisfy R-VISIBILITY and leave hard-drop destination unchanged. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-028 — Verify visibility transitions and static delivery
+            Scope: Dual-browser acceptance, README and version/release metadata; physical owners are mapped in layout.md.
+            Depends on: T-027. Work: Exercise lower→upper→lower landing changes using real commands; inspect ghost restoration and preserve ordinary modern play. Prepare 0.3.0 artifact/notes.
+            Evidence: AC-VISIBILITY passes in both targets with meaningful screenshots; prior hold/drop/lock flow stays valid. Include relevant tests/docs with this task; do not postpone its own acceptance to the review.
+        - [ ] T-029 — Review, test and report milestone 3.1
+            Depends on: T-027, T-028 and their verified issue closures. Scope: the complete milestone capability, its changed code and relevant dependencies.
+            Evidence: separate code review and focused/regression execution, repair all blockers, demonstrate the milestone outcome and retain justified TODOs with impact/options/owner. Commit report `docs/dev/reports/phases/3/3.1.md` with completion; close the review issue and then the milestone only after verified publication.
+    - [ ] Milestone 3.2 — Phase review
+        - [ ] T-030 — Review, test and report phase 3
+            Depends on: Milestone 3.1 completion/closure.
+            Scope: R-VISIBILITY; integrated playable outcome and prior behavior.
+            Evidence: independent code review, phase exits, required browser/visual/build/documentation checks and blocker repairs. Commit `docs/dev/reports/phases/3/PHASE-REPORT.md` and refresh HANDOFF with completion. Aggregate unresolved findings; when this is the final defined phase, also commit `docs/dev/reports/IMPLEMENTATION-REPORT.md` with final TODO provenance/options. Verify phase review issue/milestone closure before main integration and release preparation.
