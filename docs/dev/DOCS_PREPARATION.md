@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 6; reset to DOCS-002 using retained documents as inputs.
+- Current scope: Pass 6; DOCS-002 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back this reset, reopen/read back issues 2–9, then revise PROJECT through TASKS for the next predefined scope. Final stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-002, close/read back issue 2, then continue with DOCS-003. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -62,6 +62,8 @@ Pass 4 completed/published at `adacdc0a662d9b1b3b7b5b8b13dc4e7242f73dc0`; earlie
 Pass 5 delivery range: Phase 5, tasks T-044..T-052; earlier delivery ranges preserved. Current per-document QC is retained in the adjacent review reports; package QC is not selected.
 
 Pass 5 completed/published at `42c1a674ea235ff0a380e2022e0b9b0d2ecc4833`; earlier PLAN SHA-256 `568720925249f977c49a6e0b0cb59547dda9cf603c7eec249f04611c7a935c24` and TASKS SHA-256 `4659f3e5037f66cf3f97d75ef2eabb097c254f9b62f91c420f44651591b15d5e` are protected inputs. Pass 6 carries forward applicable accepted exploration choices for its scope; no prior delivery-range amendment is authorized.
+
+Pass 6 delegated precision: use exact setting-key URL names and tetris_v1_ prefixed cookies, exact case-sensitive enum strings, duplicate-cookie invalidation per key, one-year Max-Age, app-directory Path, SameSite=Lax and HTTPS Secure. Hydration leaves URL unchanged; user edits canonicalize only their own key. Browser source failures remain independent and non-blocking. Basis: approved persistence scope and autoloop detail delegation; detailed contracts belong in SPEC.
 
 ## Cross-scope decisions
 
@@ -124,6 +126,7 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 | Pass 5 / DOCS-006 | [PLAN.md](PLAN.md), SHA-256 `568720925249f977c49a6e0b0cb59547dda9cf603c7eec249f04611c7a935c24`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `e4312e030ccdebb216244393e9f1f98a7839bc1d8a4b17feb4fe273d85e0595b`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. PLAN/SPEC strategy conformance and delivery counts reviewed; PLAN-REVIEW-REPORT.md records coverage and retained small-group rationale. TASKS waits for combined layout review. |
 | Pass 5 / DOCS-007 | [layout.md](layout.md), SHA-256 `516b371537076748bee09d4044ed0e07355c9ee1eee9ad539dc5ccff21030196`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `9994613af10755a55130e5028faba3c0be7cc37d9515ed29770f9d2726c876aa`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Combined PLAN/layout conformance reviewed; current hashes, coverage/count rationale and placement assessment in PLAN-REVIEW-REPORT.md. No unresolved confirmed finding. |
 | Pass 5 / DOCS-008 | [TASKS.md](TASKS.md), SHA-256 `4659f3e5037f66cf3f97d75ef2eabb097c254f9b62f91c420f44651591b15d5e`; [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md), SHA-256 `29e0b7b9c0c997875fcee1a546760a7ec00fec6ade85a9901a49b92eb0ef3f7e`; [HANDOFF.md](HANDOFF.md), SHA-256 `ce99243288c9cbb340f2f10961872109e19a504d7deb4a75b2b898f181109324`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. TASKS/PLAN conformance and task counts reviewed; current source hashes, scoped coverage, dependency/review hierarchy and strict-range preservation are in TASKS-REVIEW-REPORT.md. No unresolved confirmed finding; package QC not selected. |
+| Pass 6 / DOCS-002 | [PROJECT.md](PROJECT.md), SHA-256 `6b2325032bc360872db134eb20c0c1af338fd3b551362c5ea89c046291fcbe81`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Brief checked against current cumulative scope and inherited accepted cross-scope decisions; later PROJECT approval is waived by the approved autoloop mode. Future scopes remain outside current product documents. |
 
 ## Initialization and current reset
 
@@ -137,4 +140,4 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 
 ## Pending transitions
 
-Publish/read back reset, then reopen/read back the same eight issues 2–9 with reset evidence. Milestone 1 remains open. Only after verified reopening may Pass 6 PROJECT revision begin. No documents or prior decision summaries are deleted.
+DOCS-002 publication and issue 2 closure require subsequent readback. Continue only after both are verified.

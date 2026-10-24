@@ -16,7 +16,7 @@ A bonus permits hotkey activation of the current piece as a penetrator until loc
 
 A side panel selects ghost hidden/dynamic/shown, hard drop on/off, next preview on/off, hard-drop locking follow-general/immediate, general locking failed-down/full-interval and hold on/off. Defaults enable dynamic ghost, drop, preview and hold, with interval locking and hard drop following it. Display/input settings apply immediately; locking settings apply at the next spawn with visible pending status. Restart retains selected settings.
 
-Settings last only for the current page session. Reload restores defaults without cookie, URL or other persistent writes.
+Every setting restores independently from a valid explicit URL value, then a valid saved cookie, then its default. Valid explicit URL values save to cookies even at defaults; omitted URL values preserve saved cookies. User edits save the corresponding cookie and update only that setting's query parameter. Invalid values fall through per setting. Persistence failures leave play available with truthful save status.
 
 ## Quality and constraints
 
