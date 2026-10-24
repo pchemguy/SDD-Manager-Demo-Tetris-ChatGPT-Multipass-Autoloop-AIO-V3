@@ -38,3 +38,7 @@ Presentation selects whether the domain-provided landing footprint is visible us
 ## Penetration boundary
 
 Movement rules distinguish transit feasibility from legal settled placement. The landing query scans every downward candidate using legal-placement checks; it does not stop at the first obstruction. Candidate transit remains bounded by the walls/floor and the availability of a legal landing at or below it. Locking always uses the strict legal-placement predicate. Session state alone owns activation and bonus spend/award order; hold checks that state before any exchange. Rendering chooses white from the active mode rather than modifying tetromino identity or settled-cell geometry.
+
+## Configuration boundary
+
+A typed configuration model owns six validated selected settings. Controller commands change settings, presentation exposes HTML controls, and domain snapshots distinguish selected locking policy from the current piece's latched policy. Input/display settings are read live; locking policy is latched at spawn. This prevents a control change from resetting or immediately expiring an existing timer. The configuration owner outlives a restarted game and remains memory-only for the page lifetime.

@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 5; DOCS-002 completed locally, publication and issue closure require readback.
+- Current scope: Pass 5; DOCS-003 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back DOCS-002, close/read back issue 2, then continue with DOCS-003. Final loop stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-003, close/read back issue 3, then continue with DOCS-004. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -114,6 +114,7 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 | Pass 4 / DOCS-007 | [layout.md](layout.md), SHA-256 `4271d9261e5e0fc01833816e28d38de473b5e2d255ea7d906465650c367ff110`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `f7682f99a7b4910b905c67e8c9a462bb85f8ed26802d6fb691987f6df3463f6b`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Combined PLAN/layout conformance reviewed; current hashes, coverage/count rationale and placement assessment in PLAN-REVIEW-REPORT.md. No unresolved confirmed finding. |
 | Pass 4 / DOCS-008 | [TASKS.md](TASKS.md), SHA-256 `cb9d51e7e0595f47c3419038a141cd65a32fdaeea400a10ccd466313fa5c7018`; [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md), SHA-256 `71c699e0cf3ad26d774213936b36316faa501253f56cf4b0e53bedc72bee07bb`; [HANDOFF.md](HANDOFF.md), SHA-256 `d5ba57897ac4b58d98878c5603c6f3b467675e628361c51fd060c5e26c380ad3`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. TASKS/PLAN conformance and task counts reviewed; current source hashes, scoped coverage, dependency/review hierarchy and strict-range preservation are in TASKS-REVIEW-REPORT.md. No unresolved confirmed finding; package QC not selected. |
 | Pass 5 / DOCS-002 | [PROJECT.md](PROJECT.md), SHA-256 `9640cbb15aa1fb02cf248bb06f1997bf3a63abe5e4ee9e1ebaf1b00b42661f82`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Brief checked against current cumulative scope and inherited accepted cross-scope decisions; later PROJECT approval is waived by the approved autoloop mode. Future scopes remain outside current product documents. |
+| Pass 5 / DOCS-003 | [ARCHITECTURE.md](ARCHITECTURE.md), SHA-256 `db6315f21607a5c4522b16556fe256651b1c71864267f5c2858419b7c46214a4`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Owner review passed: scope, input conformance, responsibility boundaries and links. |
 
 ## Initialization and current reset
 
@@ -127,4 +128,4 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 
 ## Pending transitions
 
-DOCS-002 publication and issue 2 closure require subsequent readback. Continue only after both are verified.
+DOCS-003 publication and issue 3 closure require subsequent readback. Continue only after both are verified.
