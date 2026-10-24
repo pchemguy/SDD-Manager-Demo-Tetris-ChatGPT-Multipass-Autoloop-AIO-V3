@@ -29,3 +29,7 @@ Use dist/ for static production output; keep node_modules/, dist/, test-results/
 ## Documentation and instruction boundaries
 
 The seven development roots and adjacent QC reports stay in docs/dev/. Preparation tasks/control/checkpoint have distinct owners: DOCS_TASKS, DOCS_PREPARATION and HANDOFF. Manual conversation templates/records stay under docs/ai-logs/ and their scoped AGENTS; they are excluded from routine validation. Bundled .agents/ content is externally supplied workflow tooling and is outside product implementation edits. Root AGENTS and browser/shell policies govern execution; source/test ownership changes update navigation without duplicating these policies.
+
+## Enhanced gameplay allocation
+
+Use src/domain/landing.ts for shared projection, src/domain/rotation.ts for ordered kick tables/selection and src/domain/clock.ts for grounding policy. Their focused tests belong in tests/unit/domain/ with cross-feature checks in tests/integration/session.test.ts. Source.ts owns bag/queue; session.ts owns hold state; Canvas/view own ghost and held-kind presentation. Avoid a separate mutable view queue.
