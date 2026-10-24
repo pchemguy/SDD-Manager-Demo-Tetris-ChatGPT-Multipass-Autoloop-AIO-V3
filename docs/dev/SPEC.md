@@ -68,7 +68,7 @@ Deliver static browser assets without a backend. No account, network leaderboard
 
 Each bag is a uniformly shuffled permutation of all seven kinds; concatenate independently shuffled bags. Maintain one queued next kind without consuming it on display. Spawn and empty hold each consume exactly one queued kind. Restart clears bag/queue and starts a fresh bag. An injected sequence replaces random draws in tests only.
 
-C holds the active kind or exchanges it with the stored kind at normal orientation/origin. At most one hold succeeds per piece cycle; holding spawns a replacement but does not itself re-enable hold. A successful lock re-enables it. An unavailable or repeated hold leaves source, board and stored kind unchanged; blocked replacement spawn ends play after the exchange is accounted for. Held/next kinds contain no previous rotation, position or clock. Show the stored kind and availability in HTML/Canvas status. The queued next kind is not displayed.
+C holds the active kind or exchanges it with the stored kind at normal orientation/origin. At most one hold succeeds per piece cycle; holding spawns a replacement but does not itself re-enable hold. A successful lock re-enables it. An unavailable or repeated hold leaves source, board and stored kind unchanged; blocked replacement spawn ends play after the exchange is accounted for. Held/next kinds contain no previous rotation, position or clock. Show the stored kind and availability in HTML/Canvas status. Next-preview visibility follows R-CONFIG.
 
 ### R-ROTATE — Clockwise SRS candidates
 
@@ -91,7 +91,7 @@ For an ordinary piece, landing is the last strict valid position reached by down
 
 Default general locking is delayed: once validly grounded, accumulate G=1000 ms from that grounding event, independently of gravity cadence; lock at exactly G unless support is lost first. Movement/rotation that remains grounded preserves elapsed grounding time. Becoming airborne clears it; a later valid grounding starts a fresh interval. Rejected commands and repeated hard drop do not refresh the timer. A failed downward attempt while grounded does not lock early under this policy. Hard drop onto a new landing starts the full interval; a hard drop that leaves an already grounded position uses the remaining interval. New spawn/hold replacement resets both clocks. Time suspension freezes both clocks. If an input event has the same logical timestamp as a due timer expiry, process the due expiry before that input, so a locked piece cannot be rescued retroactively.
 
-The failed-down rule in R-LOCK remains the alternative general policy. A hard drop under that policy follows ordinary movement semantics: arriving at the landing does not lock until a subsequent failed down attempt. No user-selectable locking-policy control is exposed. Under the default rule, hard drop never bypasses the delay.
+The failed-down rule in R-LOCK remains the alternative general policy. A hard drop under that policy follows ordinary movement semantics: arriving at the landing does not lock until a subsequent failed down attempt. Locking-policy selection follows R-CONFIG. Under the default rule, hard drop never bypasses the delay.
 
 ### Enhanced acceptance
 
@@ -119,3 +119,24 @@ Grounding occurs only at a strictly valid placement from which the next downward
 Every simultaneous four-line clear awards one bonus after locking/clearing, up to three. This includes a penetrator's own clear. Activation spends before any later award. Start/restart has zero bonuses. Render the active penetrator, its outline and its visible projected footprint in white, with ghost opacity/pattern preserving distinction; settled cells retain their original kind color after lock. Regular active/ghost/settled pieces use non-white kind colors. The side panel displays exactly one accessible lightning symbol per bonus and an accessible numeric count; update in the same committed snapshot as spend/award. Show penetrator activation/hold-unavailable status.
 
 AC-PENETRATOR: Use a board with an upper obstruction and a lower legal pocket to show ordinary landing above and penetrator landing below it; hard drop and ghost agree. Traverse overlap without erasing cells, reject candidates without any legal lower landing, cover wall/floor/ceiling and rotation cases, and assert no overlapping lock. Test zero/one/three-bonus activation, repeated activation, four-line awards at the cap, earning after spending, hold rejection without side effects, restart reset and white/non-white rendering in both browsers.
+
+## R-CONFIG — Session settings and live application
+
+Provide labelled HTML side-panel controls with these exact values and defaults. The view always reflects the selected value, including settings temporarily irrelevant to an active piece.
+
+| Setting / key | Allowed values | Default |
+| --- | --- | --- |
+| ghost | hidden, dynamic, shown | dynamic |
+| hardDrop | on, off | on |
+| nextPreview | on, off | on |
+| hardDropLock | follow, immediate | follow |
+| lockPolicy | failed-down, interval | interval |
+| hold | on, off | on |
+
+Ghost hidden draws none; shown draws any valid landing regardless of midline; dynamic applies R-VISIBILITY. Disabling hard drop makes D a no-op; it does not hide the ghost. Disabling preview hides the queued-kind view without changing its source state. Next preview, when on, shows the exact next kind before any spawn/empty hold consumes it. Disabling hold makes C a no-op and preserves the stored kind; re-enabling restores eligibility subject to the per-cycle and penetrator rules.
+
+Display and input toggles apply immediately. The two locking selections latch together on each new spawn, including hold replacement. Until then, show selected values plus a pending-policy indicator whenever they differ from the current piece's effective values. Changes cannot alter its deadline, unlock/relock it or force an immediate lock. With effective hardDropLock=immediate, an accepted enabled hard drop locks its valid destination in that same transition, including a penetrator; follow uses its effective general policy. When hard drop is disabled its lock choice remains selected for later use. All combinations are accepted.
+
+Restart preserves selected settings and applies them to the new piece while clearing gameplay state. Reload starts from defaults; settings do not write cookies, local/session storage or URL data. Form edits do not trigger play shortcuts. Invalid internal setting commands leave the prior valid selection unchanged and surface a readable validation status; no unchecked raw value enters the domain.
+
+AC-CONFIG: Check all six controls and defaults, both general policies combined with both hard-drop policies, immediate versus pending behavior during airborne/grounded/penetrator states, disabling/re-enabling hold and drop, preview without queue consumption, control focus, restart retention and reload reset. Confirm this capability writes no persistent browser state.
