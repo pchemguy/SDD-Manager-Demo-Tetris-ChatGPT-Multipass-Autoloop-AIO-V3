@@ -24,7 +24,7 @@ Seven kinds I, O, T, J, L, S and Z each have four distinct cells. The following 
 | S | (1,0), (2,0), (0,1), (1,1) |
 | Z | (0,0), (1,0), (1,1), (2,1) |
 
-Spawn at orientation 0 with no inherited movement/grounding state. If any visible spawn cell is occupied, game over occurs before accepting another play command. Rotation initially tests only the zero-offset target, retaining the original state on collision. A successful move translates one column or row; rejected movement never partly changes the piece.
+Spawn at orientation 0 with no inherited movement/grounding state. If any visible spawn cell is occupied, game over occurs before accepting another play command. Rotation tests ordered SRS candidates from R-ROTATE, retaining the original state when every candidate collides. A successful move translates one column or row; rejected movement never partly changes the piece.
 
 ### R-INPUT — Keyboard and focus
 
@@ -46,7 +46,7 @@ After a valid lock, remove every full row simultaneously, compact all surviving 
 
 ### R-LIFE — Start, loss and restart
 
-The page starts one playing session. A blocked spawn or invalid above-board lock ends it; movement, rotation and elapsed play cannot change a game-over board or score. Restart clears board, score, game-over state and all per-game state, creates a fresh source sequence and spawns one piece. Repeated restart does not multiply listeners/loops. No play-state persistence is required. Source randomness is injected for deterministic tests; production baseline draws independent uniform kinds from the seven choices.
+The page starts one playing session. A blocked spawn or invalid above-board lock ends it; movement, rotation and elapsed play cannot change a game-over board or score. Restart clears board, score, game-over state and all per-game state, creates a fresh source sequence and spawns one piece. Repeated restart does not multiply listeners/loops. No play-state persistence is required. Source randomness is injected for deterministic tests; production draws from the 7-bag source in R-BAG.
 
 ## R-VIEW / R-QUALITY — Presentation and validation
 
@@ -61,3 +61,41 @@ Deliver static browser assets without a backend. No account, network leaderboard
 - AC-CORE-3: Fixtures clearing 0..4 rows produce the exact compacted grid and score increments; survivors preserve order and color.
 - AC-CORE-4: Blocked spawn and above-board lock end play without partial writes. Restart restores the defined clean state and retains one loop/listener set.
 - AC-CORE-5: Both target browsers support the complete keyboard-to-lock-to-clear-to-game-over-to-restart path and matching visible/status evidence. Static build loads without a server-side application.
+
+## Enhanced play
+
+### R-BAG / R-HOLD — Source queue and hold
+
+Each bag is a uniformly shuffled permutation of all seven kinds; concatenate independently shuffled bags. Maintain one queued next kind without consuming it on display. Spawn and empty hold each consume exactly one queued kind. Restart clears bag/queue and starts a fresh bag. An injected sequence replaces random draws in tests only.
+
+C holds the active kind or exchanges it with the stored kind at normal orientation/origin. At most one hold succeeds per piece cycle; holding spawns a replacement but does not itself re-enable hold. A successful lock re-enables it. An unavailable or repeated hold leaves source, board and stored kind unchanged; blocked replacement spawn ends play after the exchange is accounted for. Held/next kinds contain no previous rotation, position or clock. Show the stored kind and availability in HTML/Canvas status. The next kind may remain undisplayed until preview is enabled as a product capability.
+
+### R-ROTATE — Clockwise SRS candidates
+
+Use local transforms in R-PIECE; offsets below are tried from left to right after transforming. Coordinates are x right, y down. O has only (0,0), retaining its geometry. For each other kind, use its named offset table; first legal candidate wins. At spawn margin, preserve the ceiling bound. Failed rotation leaves position, orientation and clock unchanged.
+
+| Transition | J/L/S/T/Z offsets | I offsets |
+| --- | --- | --- |
+| 0→R | (0,0), (-1,0), (-1,-1), (0,2), (-1,2) | (0,0), (-2,0), (1,0), (-2,1), (1,-2) |
+| R→2 | (0,0), (1,0), (1,1), (0,-2), (1,-2) | (0,0), (-1,0), (2,0), (-1,-2), (2,1) |
+| 2→L | (0,0), (1,0), (1,-1), (0,2), (1,2) | (0,0), (2,0), (-1,0), (2,-1), (-1,2) |
+| L→0 | (0,0), (-1,0), (-1,1), (0,-2), (-1,-2) | (0,0), (1,0), (-2,0), (1,2), (-2,-1) |
+
+Counterclockwise/180-degree commands are not required. The tables are the canonical project offsets; tests use their declared screen-coordinate convention.
+
+### R-LANDING / R-DROP / R-GHOST — Shared projection
+
+For an ordinary piece, landing is the last strict valid position reached by downward steps before the first blocking row. Space remains rotation; D, ignoring key repeat, performs hard drop to that landing without modifying settled cells. If no fully visible valid landing exists, hard drop results in top-out rather than locking invisible cells. A visible ghost is a translucent/outlined footprint of the exact projected destination, drawn behind the active piece without mutation or source consumption. Its color/opacity is distinct from settled cells.
+
+### R-DELAY — Full-interval default lock
+
+Default general locking is delayed: once validly grounded, accumulate G=1000 ms from that grounding event, independently of gravity cadence; lock at exactly G unless support is lost first. Movement/rotation that remains grounded preserves elapsed grounding time. Becoming airborne clears it; a later valid grounding starts a fresh interval. Rejected commands and repeated hard drop do not refresh the timer. A failed downward attempt while grounded does not lock early under this policy. Hard drop onto a new landing starts the full interval; a hard drop that leaves an already grounded position uses the remaining interval. New spawn/hold replacement resets both clocks. Time suspension freezes both clocks. If an input event has the same logical timestamp as a due timer expiry, process the due expiry before that input, so a locked piece cannot be rescued retroactively.
+
+The failed-down rule in R-LOCK remains the alternative general policy. A hard drop under that policy follows ordinary movement semantics: arriving at the landing does not lock until a subsequent failed down attempt. There is no user-selectable policy control unless required by R-CONFIG. Under the default rule, hard drop never bypasses the delay.
+
+### Enhanced acceptance
+
+- AC-MODERN-1: Every consecutive bag-aligned group of seven contains each kind exactly once; held exchanges consume the queue only when empty, reset orientation/clocks and obey one-hold-per-cycle.
+- AC-MODERN-2: Fixtures for all four clockwise transitions of both offset families choose the first legal candidate; fully blocked rotation preserves the original piece.
+- AC-MODERN-3: Ghost cells equal hard-drop destination for the same snapshot, including walls, cavities and top-out; reading projection never mutates state.
+- AC-MODERN-4: At 999 ms of grounding no lock, at 1000 ms lock. Grounded moves/failed down/repeated drop preserve the deadline; leaving support and regrounding resets as specified. Equivalent active-time partitions and focus suspension preserve outcomes.
