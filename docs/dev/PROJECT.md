@@ -14,6 +14,10 @@ The dynamic ghost is hidden whenever any projected cell lies above the board's m
 
 A bonus permits hotkey activation of the current piece as a penetrator until lock. It can traverse settled cells without destroying them, but its final placement must be fully in-board and non-overlapping. Its hard drop and visible ghost select the lowest legal downward destination, even below obstructions. Hold is disabled during activation. A four-line clear earns one bonus, capped at three. Render active penetrators and their visible ghosts white, reserve non-white kind colors for regular/settled pieces, and display one side-panel symbol per available bonus.
 
+A side panel selects ghost hidden/dynamic/shown, hard drop on/off, next preview on/off, hard-drop locking follow-general/immediate, general locking failed-down/full-interval and hold on/off. Defaults enable dynamic ghost, drop, preview and hold, with interval locking and hard drop following it. Display/input settings apply immediately; locking settings apply at the next spawn with visible pending status. Restart retains selected settings.
+
+Settings last only for the current page session. Reload restores defaults without cookie, URL or other persistent writes.
+
 ## Quality and constraints
 
 Run entirely as static browser assets, without a game server. Use TypeScript for the domain, Canvas for the board and ordinary labelled HTML controls/status. Keep rules testable without browser globals, and verify the integrated game with real browser input and visible evidence. Chromium is primary and Playwright-managed Firefox secondary under the central [browser development policy](../../BROWSER_DEV_POLICY.md); headless operation is sufficient. Focus loss suspends active simulation time without a catch-up burst.
