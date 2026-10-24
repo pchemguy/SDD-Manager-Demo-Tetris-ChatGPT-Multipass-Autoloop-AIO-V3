@@ -43,4 +43,15 @@ Geometry exposes separate strict placement and transit/landing queries. Session 
 
 ## Selected and effective configuration
 
-Configuration model validates six selected settings and exposes a typed change operation. Session latches the two locking settings together on every spawn, including hold exchange; input/display selectors use selected values immediately. The HTML configuration view shows selected controls and any pending locking-policy state without taking game keyboard shortcuts while editing. Restart obtains selected settings from the existing configuration owner. The memory-only model has no cookie, storage or URL dependency. Next-preview rendering reads the already queued kind without consuming it.
+Configuration model validates six selected settings and exposes a typed change operation. Session latches the two locking settings together on every spawn, including hold exchange; input/display selectors use selected values immediately. The HTML configuration view shows selected controls and any pending locking-policy state without taking game keyboard shortcuts while editing. Restart obtains selected settings from the existing configuration owner. The model itself has no browser I/O dependency; persistence adapters supply validated hydration and changes. Next-preview rendering reads the already queued kind without consuming it.
+
+## Persistence responsibilities
+
+| Component | Owns | Failure / test seam |
+| --- | --- | --- |
+| Setting codec | Exact parameter/cookie keys, valid enums, per-setting precedence and serialization | Table-driven source combinations, malformed/duplicate/empty values, default-equal URL values |
+| URL adapter | Read query values and replace one parameter without navigation | Preserve unrelated pairs/fragment; catch history failure and report status |
+| Cookie adapter | Read only managed cookies, encode/write one selected value, read back save outcome | Corrupt/duplicate/blocked cookies; scoped expiry/path and HTTPS attributes |
+| Configuration coordinator | Hydrate before first spawn; persist explicit valid URL values; orchestrate independent per-setting user writes | In-memory settings remain authoritative for this page after write failures |
+
+Neither adapter edits session state directly. Startup resolution returns all six settings plus valid-explicit provenance, allowing cookie seeding without treating omissions as defaults. A cookie write failure does not suppress the independent URL update. A history failure does not suppress a cookie save. No credentials or gameplay progress are persisted.
