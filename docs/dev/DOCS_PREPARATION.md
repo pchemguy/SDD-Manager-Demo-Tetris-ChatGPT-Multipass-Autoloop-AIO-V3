@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 2; reset to DOCS-002 using retained documents as inputs.
+- Current scope: Pass 2; DOCS-002 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back this reset, reopen/read back issues 2–9, then revise PROJECT through TASKS for the next predefined scope. Final stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-002, close/read back issue 2, then continue with DOCS-003. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -75,6 +75,7 @@ Pass 1 completed/published at `7ee416226cfd7c81343c6d1f58c72a49ce483c21`; earlie
 | Pass 1 / DOCS-006 | [PLAN.md](PLAN.md), SHA-256 `bf06822e21e9db23b63616ae9d44e29a75005045d8da31db5d064fdf474cb2c5`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `cd80eee11fc9540ff44c837adf1c4363818c1849f1c9c329a3efc082f3c3deaa`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. PLAN/SPEC strategy conformance and delivery counts reviewed; PLAN-REVIEW-REPORT.md records coverage and retained small-group rationale. TASKS waits for combined layout review. |
 | Pass 1 / DOCS-007 | [layout.md](layout.md), SHA-256 `9e19ae95687f3992a477bcac7a61330ad020b10ad6b7179b38f9c46f371481ed`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `adcd54dd0f7f118697f60a178091849b6b7294fb995e24f62867b45ddc57c7ae`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Combined PLAN/layout conformance reviewed; current hashes, coverage/count rationale and placement assessment in PLAN-REVIEW-REPORT.md. No unresolved confirmed finding. |
 | Pass 1 / DOCS-008 | [TASKS.md](TASKS.md), SHA-256 `e19fc2fb4918d0c1ef26afd9f318653fd770e52d48ce5978d2fbfb9ae9ad81c6`; [TASKS-REVIEW-REPORT.md](TASKS-REVIEW-REPORT.md), SHA-256 `fe0a6340d8937a8a4982876648e318e5cb8a8fed0ed15afa8187e7774e1e4096`; [HANDOFF.md](HANDOFF.md), SHA-256 `180375dd6c8c4da6caccb43367d87d2584e1fe41e4b4f430e2284233e0c656d8`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. TASKS/PLAN conformance and task counts reviewed; current source hashes, scoped coverage, dependency/review hierarchy and strict-range preservation are in TASKS-REVIEW-REPORT.md. No unresolved confirmed finding; package QC not selected. |
+| Pass 2 / DOCS-002 | [PROJECT.md](PROJECT.md), SHA-256 `7b8c9baf31d1048a6d1632a8c795bc3a07fef484fcadb4ee189f588e55d94127`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Brief checked against current cumulative scope and inherited accepted cross-scope decisions; later PROJECT approval is waived by the approved autoloop mode. Future scopes remain outside current product documents. |
 
 ## Initialization and current reset
 
@@ -88,4 +89,4 @@ Pass 1 completed/published at `7ee416226cfd7c81343c6d1f58c72a49ce483c21`; earlie
 
 ## Pending transitions
 
-Publish/read back reset, then reopen/read back the same eight issues 2–9 with reset evidence. Milestone 1 remains open. Only after verified reopening may Pass 2 PROJECT revision begin. No documents or prior decision summaries are deleted.
+DOCS-002 publication and issue 2 closure require subsequent readback. Continue only after both are verified.
