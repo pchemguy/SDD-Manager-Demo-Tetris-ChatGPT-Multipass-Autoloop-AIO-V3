@@ -12,6 +12,8 @@ Provide hold, a projected ghost, independently shuffled seven-piece bags, clockw
 
 The dynamic ghost is hidden whenever any projected cell lies above the board's midline, including a straddling footprint, and returns when the whole projected footprint is in the lower half. Landing geometry is independent of visibility.
 
+A bonus permits hotkey activation of the current piece as a penetrator until lock. It can traverse settled cells without destroying them, but its final placement must be fully in-board and non-overlapping. Its hard drop and visible ghost select the lowest legal downward destination, even below obstructions. Hold is disabled during activation. A four-line clear earns one bonus, capped at three. Render active penetrators and their visible ghosts white, reserve non-white kind colors for regular/settled pieces, and display one side-panel symbol per available bonus.
+
 ## Quality and constraints
 
 Run entirely as static browser assets, without a game server. Use TypeScript for the domain, Canvas for the board and ordinary labelled HTML controls/status. Keep rules testable without browser globals, and verify the integrated game with real browser input and visible evidence. Chromium is primary and Playwright-managed Firefox secondary under the central [browser development policy](../../BROWSER_DEV_POLICY.md); headless operation is sufficient. Focus loss suspends active simulation time without a catch-up burst.
