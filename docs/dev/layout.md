@@ -45,3 +45,7 @@ Extend geometry.ts/landing.ts with strict-versus-transit queries; session.ts own
 ## Configuration allocation
 
 Use src/config/model.ts for typed selected settings/defaults/validation and src/ui/configuration.ts for labelled controls/pending status. src/ui/preview.ts reads the existing next queue. Composition shares one configuration owner across restarts; session.ts latches locking policy. Tests live in tests/unit/config/, tests/integration/configuration.test.ts and tests/browser/configuration.spec.ts. Keep browser persistence out of this memory model.
+
+## Persistence allocation
+
+Use src/config/codec.ts for pure source parsing/precedence/serialization, src/config/persistence.ts for hydration/edit coordination, and src/browser/cookies.ts plus src/browser/url.ts for concrete browser effects. Configuration model remains independent. Tests/unit/config/codec.test.ts covers source matrices; tests/unit/browser/ covers adapter errors; tests/integration/configuration.test.ts covers coordinator behavior; tests/browser/persistence.spec.ts uses isolated cookie contexts and reload/path/history scenarios. Save-status presentation remains in src/ui/configuration.ts. No server or generic database package is allocated.

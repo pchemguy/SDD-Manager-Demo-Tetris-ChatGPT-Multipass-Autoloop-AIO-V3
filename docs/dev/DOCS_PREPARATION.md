@@ -4,10 +4,10 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for the six cumulative scopes below.
 - Multipass delivery mode: strict, the package default; flexible integration has not been authorized. Protect earlier delivery phase/task IDs, scope, milestone membership, order, dependencies and exits. No implementation task range is authorized; delivery ranges will be established in PLAN/TASKS.
-- Current scope: Pass 6; DOCS-006 completed locally, publication and issue closure require readback.
+- Current scope: Pass 6; DOCS-007 completed locally, publication and issue closure require readback.
 - Approval basis: first PROJECT approval was granted on 2026-10-24 for proposal a339ba1d169f9660870e7b9f6928d582c5dc789a. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved by the selected mode. Approval of the first brief authorizes the agreed sequence and resets. Newly discovered eligible material choices are delegated to agent judgment, with visible rationale and retained evidence.
 - Tracking: root AGENTS.md selects GitHub preparation and implementation tracking by default. Milestone 1 and issues 1–9 were created from this repository's bundled definitions and individually read back before target writes. Git publication remains mandatory after every owned commit.
-- Next boundary: publish/read back DOCS-006, close/read back issue 6, then continue with DOCS-007. Final loop stop remains Pass 6 DOCS-008.
+- Next boundary: publish/read back DOCS-007, close/read back issue 7, then continue with DOCS-008. Final loop stop remains Pass 6 DOCS-008.
 - Reporting: Explicit bootstrap completed; Standard thereafter. Minimal and Explicit remain available on request.
 
 ## Scope sequence
@@ -131,6 +131,7 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 | Pass 6 / DOCS-004 | [DECOMPOSITION.md](DECOMPOSITION.md), SHA-256 `09e098d9cd863cefd1a6257baeddb88cff8e1efa21f9fe135d6ce2c7d0140ee4`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Owner review passed: scope, input conformance, responsibility boundaries and links. |
 | Pass 6 / DOCS-005 | [SPEC.md](SPEC.md), SHA-256 `fc4614db72151874b30135fed92df2742e63b7749c1ff5076ef7c656391ea36a`; [SPEC-REVIEW-REPORT.md](SPEC-REVIEW-REPORT.md), SHA-256 `eb2c8ac3b1f3a64d048868f431580d1dfba8ea7dbccdf96ba7fe03bd126cdc83`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. SPEC/design conformance reviewed; exact source hashes, grouped contract/acceptance coverage and limits are in SPEC-REVIEW-REPORT.md. No unresolved confirmed finding. |
 | Pass 6 / DOCS-006 | [PLAN.md](PLAN.md), SHA-256 `40050cd4f3fca4e38058da3223ed2054838418f4bfa3f70a25fdb7ff742fea29`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `e6da6868a2886db73870d9052a4a5800a3addddcf8ad2eb897c98a3b651674f4`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. PLAN/SPEC strategy conformance and delivery counts reviewed; PLAN-REVIEW-REPORT.md records coverage and retained small-group rationale. TASKS waits for combined layout review. |
+| Pass 6 / DOCS-007 | [layout.md](layout.md), SHA-256 `da8538f132bc08e6b7522841a1135a8a7d46c5478c76906e2ada863531db1890`; [PLAN-REVIEW-REPORT.md](PLAN-REVIEW-REPORT.md), SHA-256 `cca6d3b1dd8bd74ae38a4b57dc3162860f37d9f82b86c16976b797f4f3261532`. Basis: Selected autodoc/autoloop scoped preapproval and delegated decisions. Combined PLAN/layout conformance reviewed; current hashes, coverage/count rationale and placement assessment in PLAN-REVIEW-REPORT.md. No unresolved confirmed finding. |
 
 ## Initialization and current reset
 
@@ -144,4 +145,4 @@ Pass 2 follow-up QC: SPEC-F01 removed an undefined future configuration referenc
 
 ## Pending transitions
 
-DOCS-006 publication and issue 6 closure require subsequent readback. Continue only after both are verified.
+DOCS-007 publication and issue 7 closure require subsequent readback. Continue only after both are verified.
